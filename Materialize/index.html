@@ -8,40 +8,41 @@
     <title>Document</title>
     <!--Import Google Icon Font-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <!-- Compiled and minified CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-alpha.2/css/materialize.min.css">
-    <script defer src="https://use.fontawesome.com/releases/v5.0.2/js/all.js"></script>
-    <link rel="stylesheet" href="css/style.css">
 
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-alpha.3/css/materialize.min.css">
+
+    <!-- Import Font Awesome Icon -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.2/js/all.js"></script>
+
+    <!-- Custom Styles CSS -->
+    <link rel="stylesheet" href="css/style.css">
 
 </head>
 
 <body>
 
-    <nav class="cyan" role="navigation">
-        <div class="nav-wrapper container">
-            <a id="logo-container" href="#" class="brand-logo">Logo</a>
-            <ul class="right hide-on-med-and-down">
-                <li>
-                    <a href="#">Navbar Link</a>
-                </li>
-            </ul>
-
-            <ul id="nav-mobile" class="side-nav">
-                <li>
-                    <a href="#">Navbar Link</a>
-                </li>
-            </ul>
-            <a href="#" data-activates="nav-mobile" class="button-collapse">
+    <nav>
+        <div class="nav-wrapper cyan">
+            <a href="#!" class="brand-logo">Logo</a>
+            <a href="#" data-target="mobile-demo" class="sidenav-trigger">
                 <i class="material-icons">menu</i>
             </a>
+            <ul class="right hide-on-med-and-down">
+                <li>
+                    <a href="#">Sass</a>
+                </li>
+
+            </ul>
+            <ul class="sidenav" id="mobile-demo">
+                <li>
+                    <a href="#">Sass</a>
+                </li>
+            </ul>
         </div>
     </nav>
 
-
-
-
-
+    <!-- Header Image -->
     <div class="card-panel hoverable">
         <img class="nature-img" src="https://images.pexels.com/photos/459225/pexels-photo-459225.jpeg?h=350&auto=compress&cs=tinysrgb"
             alt="">
@@ -72,11 +73,40 @@
 
         <div class="diveider"></div>
 
+        <div class="card">
+            <div class="card-image waves-effect waves-block waves-light">
+                <img class="activator" src="https://images.pexels.com/photos/756494/pexels-photo-756494.jpeg?h=350&auto=compress&cs=tinysrgb">
+            </div>
+            <div class="card-content">
+                <span class="card-title activator grey-text text-darken-4">Card Title
+                    <i class="material-icons right">more_vert</i>
+                </span>
+                <p>
+                    <a href="#">This is a link</a>
+                </p>
+            </div>
+            <div class="card-reveal">
+                <span class="card-title grey-text text-darken-4">Card Title
+                    <i class="material-icons right">close</i>
+                </span>
+                <p>Here is some more information about this product that is only revealed once clicked on.</p>
+            </div>
+        </div>
+
     </div>
 
+    <!-- Compiled and minified JQuery -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        crossorigin="anonymous"></script>
 
     <!-- Compiled and minified JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-alpha.2/js/materialize.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-alpha.3/js/materialize.min.js "></script>
+
+    <script>
+        $(document).ready(function () {
+            $('.sidenav').sidenav();
+        });
+    </script>
 
 
 </body>

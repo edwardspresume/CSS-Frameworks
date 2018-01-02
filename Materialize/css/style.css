@@ -4,21 +4,4 @@ img {
 .nature-img {
   width: 100%; }
 
-h1.teal-text::before,
-h1.teal-text::after {
-  height: 17px;
-  width: 17px;
-  display: inline-block;
-  content: "";
-  margin: 5px;
-  border-radius: 10px;
-  background: #1e88e5;
-  animation: spin 2s linear infinite; }
-
-@keyframes spin {
-  from {
-    transform: rotate(0deg); }
-  to {
-    transform: rotate(360deg); } }
-
 /*# sourceMappingURL=style.css.map */
