@@ -11,7 +11,7 @@ h1.teal-text::after {
   display: inline-block;
   content: "";
   margin: 5px;
-  border-radius: 3px;
+  border-radius: 10px;
   background: #1e88e5;
   animation: spin 2s linear infinite; }
 
