@@ -1,8 +1,16 @@
 img {
   max-width: 100%; }
 
-.nature-img {
-  width: 100%; }
+nav {
+  background-color: transparent; }
+  nav .brand-logo,
+  nav .material-icons {
+    color: cyan; }
+
+header {
+  height: 700px;
+  margin-top: -60px;
+  background: url("https://images.unsplash.com/photo-1494315153767-9c231f2dfe79?dpr=1.25&auto=format&fit=crop&w=767&h=1151&q=60&cs=tinysrgb") no-repeat center center/cover; }
 
 .btn-row {
   margin: 35px 0; }
