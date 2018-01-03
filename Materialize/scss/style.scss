@@ -7,15 +7,37 @@ nav {
   .material-icons {
     color: cyan;
   }
-
   background-color: transparent;
 }
 
+.sidenav-overlay {
+  background-color: rgba(0, 0, 0, 0);
+}
+
 header {
-  height: 700px;
+  min-height: 700px;
   margin-top: -60px;
   background: url("https://images.unsplash.com/photo-1494315153767-9c231f2dfe79?dpr=1.25&auto=format&fit=crop&w=767&h=1151&q=60&cs=tinysrgb")
     no-repeat center center/ cover;
+  background-attachment: fixed;
+
+  .dark-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 700px;
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+
+  .header-inner {
+    padding-top: 120px;
+    color: #fff;
+
+    .col {
+      margin-top: 250px;
+    }
+  }
 }
 
 .btn-row {
