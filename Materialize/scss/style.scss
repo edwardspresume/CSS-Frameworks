@@ -17,10 +17,8 @@ nav {
 header {
   min-height: 700px;
   margin-top: -60px;
-  background: url("https://images.unsplash.com/photo-1494315153767-9c231f2dfe79?dpr=1.25&auto=format&fit=crop&w=767&h=1151&q=60&cs=tinysrgb")
-    no-repeat center center/ cover;
+  background: url("https://images.unsplash.com/photo-1494315153767-9c231f2dfe79?dpr=1.25&auto=format&fit=crop&w=767&h=1151&q=60&cs=tinysrgb") no-repeat center center/ cover;
   background-attachment: fixed;
-
   .dark-overlay {
     position: absolute;
     top: 0;
@@ -29,20 +27,29 @@ header {
     min-height: 700px;
     background-color: rgba(0, 0, 0, 0.3);
   }
-
   .header-inner {
     padding-top: 120px;
     color: #fff;
-
+    h3 {
+      font-weight: 600;
+    }
     .col {
       margin-top: 250px;
     }
   }
 }
 
-.btn-row {
-  margin: 35px 0;
+.intro-section {
+  margin-top: 50px;
+  .pulse {
+    margin: 30px 0;
+  }
 }
+
+.card-panel {
+  margin-top: 50px;
+}
+
 .material-icons {
   font-size: 50px;
 }
